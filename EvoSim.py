@@ -4,7 +4,7 @@ import time
 
 # Overview:
 '''
-The purpose of this program is to simulate biologicsl evolution and to test how different parameters affects it.  
+The purpose of this program is to simulate biological evolution and to test how different parameters affects it.  
 It first creates and stores a set of creatures and environments as requested by the user.
 Each creature has a set of genes, each of which are 16 numbers between 0 and 9.  These genes 
 determine the lifespan, birthrate, abd mutatation rate. 
