@@ -5,14 +5,14 @@ import time
 
 # Overview:
 '''
-The purpose of this program is xxxx
+The purpose of this program is to simulate biologicsl evolution and to test how different parameters affects it.  
 It first creates and stores a set of creatures and environments as requested by the user.
-Each creature has a set of genes, each of which are N numbers between 0 and 9.  These genes 
-determine the xxxx 
-Each environment is defined by XXX
+Each creature has a set of genes, each of which are 16 numbers between 0 and 9.  These genes 
+determine the lifespan, birthrate, abd mutatation rate. 
+Each environment is defined by a set of functions that determine death abd birth rates as a function of population size
 The program then starts the simulation which does a check every year of which creatures are able to reproduce
-and which creatures die according to the genes and environments. Whenever a creature reproduces it copies it's 
-genes and generates possible mutations. At the end, the program prints out the list of living creatures in each
+and which creatures die, according to the genes and environments. Whenever a creature reproduces, it copies it's 
+genes and generates mutations probsbilistically. At the end, the program prints out a list of living creatures in each
 environment and how many were born.  
 '''
 
