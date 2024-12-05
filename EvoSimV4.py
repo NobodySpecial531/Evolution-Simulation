@@ -1,5 +1,4 @@
 import random
-import sys
 import math
 import time
 
@@ -105,13 +104,13 @@ def haveChild(aliveCreatures, deadCreatures, creatureCounter, mutationFactor, pa
                 editedMutationTable = []
                 for b in range(len(mutationTable)):
                     totalChances = totalChances + mutationTable[b]
-                    if b != a:
-                        editedMutationTable.append(totalChances)
+                    editedMutationTable.append(totalChances)
                 randomNum = random.randint(1,totalChances)
                 newMutation = None
                 for b in range(len(editedMutationTable)):
                     if editedMutationTable[b] >= randomNum:
                         newMutation = b
+                        break
 
                 gene_list[a] = str(newMutation)  # Update character
                 newCreature[0] = ''.join(gene_list)
